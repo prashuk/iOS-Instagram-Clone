@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,12 @@
 		FE105D15254786D000BA1991 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE105D14254786D000BA1991 /* Assets.xcassets */; };
 		FE105D18254786D000BA1991 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE105D17254786D000BA1991 /* Preview Assets.xcassets */; };
 		FE105D1B254786D000BA1991 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE105D19254786D000BA1991 /* LaunchScreen.storyboard */; };
+		FE105D322547888700BA1991 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FE105D312547888700BA1991 /* GoogleService-Info.plist */; };
+		FE105D38254788D900BA1991 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE105D37254788D900BA1991 /* ErrorView.swift */; };
+		FE105D3E254788DD00BA1991 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE105D3D254788DD00BA1991 /* SignUp.swift */; };
+		FE105D3F254788DD00BA1991 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE105D3A254788DD00BA1991 /* Home.swift */; };
+		FE105D40254788DD00BA1991 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE105D3B254788DD00BA1991 /* HomeScreen.swift */; };
+		FE105D41254788DD00BA1991 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE105D3C254788DD00BA1991 /* Login.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +34,12 @@
 		FE105D17254786D000BA1991 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FE105D1A254786D000BA1991 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE105D1C254786D000BA1991 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE105D312547888700BA1991 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FE105D37254788D900BA1991 /* ErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		FE105D3A254788DD00BA1991 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		FE105D3B254788DD00BA1991 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		FE105D3C254788DD00BA1991 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		FE105D3D254788DD00BA1991 /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +60,6 @@
 				9F156A4CB900276D2B1D0487 /* Pods-iOS-Instagram.debug.xcconfig */,
 				5FCCF62ED13BE2418F127B9C /* Pods-iOS-Instagram.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,12 +92,14 @@
 		FE105D0D254786CF00BA1991 /* iOS-Instagram */ = {
 			isa = PBXGroup;
 			children = (
+				FE105D36254788CC00BA1991 /* Screens */,
+				FE105D312547888700BA1991 /* GoogleService-Info.plist */,
+				FE105D1C254786D000BA1991 /* Info.plist */,
+				FE105D19254786D000BA1991 /* LaunchScreen.storyboard */,
+				FE105D14254786D000BA1991 /* Assets.xcassets */,
 				FE105D0E254786CF00BA1991 /* AppDelegate.swift */,
 				FE105D10254786CF00BA1991 /* SceneDelegate.swift */,
 				FE105D12254786CF00BA1991 /* ContentView.swift */,
-				FE105D14254786D000BA1991 /* Assets.xcassets */,
-				FE105D19254786D000BA1991 /* LaunchScreen.storyboard */,
-				FE105D1C254786D000BA1991 /* Info.plist */,
 				FE105D16254786D000BA1991 /* Preview Content */,
 			);
 			path = "iOS-Instagram";
@@ -98,6 +111,18 @@
 				FE105D17254786D000BA1991 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FE105D36254788CC00BA1991 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				FE105D37254788D900BA1991 /* ErrorView.swift */,
+				FE105D3A254788DD00BA1991 /* Home.swift */,
+				FE105D3B254788DD00BA1991 /* HomeScreen.swift */,
+				FE105D3C254788DD00BA1991 /* Login.swift */,
+				FE105D3D254788DD00BA1991 /* SignUp.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +186,7 @@
 			files = (
 				FE105D1B254786D000BA1991 /* LaunchScreen.storyboard in Resources */,
 				FE105D18254786D000BA1991 /* Preview Assets.xcassets in Resources */,
+				FE105D322547888700BA1991 /* GoogleService-Info.plist in Resources */,
 				FE105D15254786D000BA1991 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,7 +242,12 @@
 			files = (
 				FE105D0F254786CF00BA1991 /* AppDelegate.swift in Sources */,
 				FE105D11254786CF00BA1991 /* SceneDelegate.swift in Sources */,
+				FE105D40254788DD00BA1991 /* HomeScreen.swift in Sources */,
 				FE105D13254786CF00BA1991 /* ContentView.swift in Sources */,
+				FE105D38254788D900BA1991 /* ErrorView.swift in Sources */,
+				FE105D3F254788DD00BA1991 /* Home.swift in Sources */,
+				FE105D3E254788DD00BA1991 /* SignUp.swift in Sources */,
+				FE105D41254788DD00BA1991 /* Login.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
